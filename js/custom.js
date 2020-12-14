@@ -321,8 +321,6 @@ inputNumber($('.input-number'));
   $(this).addClass('active').siblings().removeClass('active');
  }); 
 
- console.log("azz");
-
 $(window).resize(function() {
   var width = $(window).width();
   if (width < 991){
@@ -331,6 +329,5 @@ $(window).resize(function() {
     $(".logo").attr("src","img/logo.png");
   }
 });
-
 
 }(jQuery));
