@@ -321,5 +321,16 @@ inputNumber($('.input-number'));
   $(this).addClass('active').siblings().removeClass('active');
  }); 
 
+ console.log("azz");
+
+$(window).resize(function() {
+  var width = $(window).width();
+  if (width < 991){
+    $(".logo").attr("src","img/logo2.png");
+  } else{
+    $(".logo").attr("src","img/logo.png");
+  }
+});
+
 
 }(jQuery));
