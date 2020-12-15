@@ -64,8 +64,13 @@
                             </li>
                             <li class="nav-item">
                                 <a class="nav-link" href="contact.html">Контакти</a>
+                            </li>                          
                         </ul>
                     </div>
+                    <div class="hearer_icon d-flex">
+                      <div class="dropdown cart">
+                        <i id="cartItems" class="ti-bag"></i>
+                  </div>
                 </nav>
             </div>
         </div>
@@ -121,7 +126,7 @@
           </div>
         </div>
         <div class="col-lg-5 offset-lg-1">
-          <div class="s_product_text">
+          <div id="productID" data-index-number="123"class="s_product_text">
             <h3>Faded SkyBlu Denim Jeans</h3>
             <h2>$149.99</h2>
             <ul class="list">
@@ -143,7 +148,7 @@
                 <span class="number-increment"> <i class="ti-plus"></i></span>
               </div>
               <div class="add_to_cart">
-                  <a href="#" class="btn_3">add to cart</a>
+                  <a href="#" id="addToCartBtn" class="btn_3">add to cart</a>
                   <a href="#" class="like_us"> <i class="ti-heart"></i> </a>
               </div>
               <div class="social_icon">
@@ -157,6 +162,7 @@
       </div>
     </div>
   </div>
+  <table id="list"></table>
   <!--================End Single Product Area =================-->
 
   <!--================Product Description Area =================-->
