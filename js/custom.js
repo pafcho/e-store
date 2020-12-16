@@ -357,7 +357,6 @@ function doShowAll() {
 			list += "<tr><td><i>empty</i></td>\n<td><i>empty</i></td></tr>\n";
 		}
 		//bind the data to html table
-		//you can use jQuery too....
 		document.getElementById('list').innerHTML = list;
 	} else {
 		alert('Cannot save shopping list as your browser does not support HTML 5');
@@ -366,6 +365,8 @@ function doShowAll() {
 
 $("#addToCartBtn").click(function() {
   var itemCount = $(".input-number").val();
+  //var initialCount = $("#cartItems").attr('data-after');
+  //console.log(initialCount);
   $("#cartItems").attr('data-after', itemCount)
   SaveItem();
 });
